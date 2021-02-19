@@ -209,7 +209,7 @@ body {
   }
 }
 
-@media screen and (max-width: 100px) {
+@media screen and (max-width: 1000px) {
   form {
     width: 290px;
   }
@@ -217,20 +217,20 @@ body {
     font-size: 2.4rem;
     margin: 8px 0;
   }
-  .img img {
+  .container .img img {
     width: 400px;
   }
 }
 
 @media screen and (max-width: 900px) {
-  .img {
-    display: none;
-  }
   .container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }
-  .login-container {
+  .container .img {
+    display: none;
+  }
+  .container .login-container {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
