@@ -123,6 +123,7 @@ body {
           align-items: center;
           i {
             color: #d9d9d9;
+            transition: 0.3s ease;
           }
         }
         .input {
@@ -150,7 +151,7 @@ body {
             color: #999;
             font-size: 18px;
             transition: 0.3s ease;
-            // display: none;
+            display: none;
           }
         }
       }
@@ -166,6 +167,7 @@ body {
   width: 0;
   height: 2px;
   background-color: #3a30ff;
+  transition: 0.3s ease;
 }
 
 .input-div:after {
@@ -179,4 +181,37 @@ body {
 .input-div.focus:after,
 .input-div.focus:before {
   width: 50%;
+}
+
+@media screen and (max-width: 1050px) {
+  .container {
+    grid-gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 100px) {
+  form {
+    width: 290px;
+    h2 {
+      font-size: 2.4rem;
+      margin: 8px 0;
+    }
+  }
+  .img {
+    img {
+      width: 400px;
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .img {
+    display: none;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .login-container {
+    justify-content: center;
+  }
 }

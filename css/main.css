@@ -141,6 +141,8 @@ body {
 
 .container .login-container form .input-div .i i {
   color: #d9d9d9;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .container .login-container form .input-div .input {
@@ -173,6 +175,7 @@ body {
   font-size: 18px;
   -webkit-transition: 0.3s ease;
   transition: 0.3s ease;
+  display: none;
 }
 
 .input-div:after,
@@ -183,6 +186,8 @@ body {
   width: 0;
   height: 2px;
   background-color: #3a30ff;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
 .input-div:after {
@@ -196,5 +201,39 @@ body {
 .input-div.focus:after,
 .input-div.focus:before {
   width: 50%;
+}
+
+@media screen and (max-width: 1050px) {
+  .container {
+    grid-gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 100px) {
+  form {
+    width: 290px;
+  }
+  form h2 {
+    font-size: 2.4rem;
+    margin: 8px 0;
+  }
+  .img img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .img {
+    display: none;
+  }
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .login-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 /*# sourceMappingURL=main.css.map */
