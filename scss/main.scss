@@ -25,7 +25,7 @@ body {
   padding: 0 2rem;
   .img {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     img {
       width: 500px;
@@ -140,20 +140,20 @@ body {
           color: #555;
           font-family: "Ubuntu", sans-serif;
         }
-        div {
-          position: relative;
-          height: 45px;
-          h5 {
-            position: absolute;
-            left: 10px;
-            top: 50%;
-            transform: translateY(-50%);
-            color: #999;
-            font-size: 18px;
-            transition: 0.3s ease;
-            display: none;
-          }
-        }
+        // div {
+        //   position: relative;
+        //   height: 45px;
+        //   h5 {
+        //     position: absolute;
+        //     left: 10px;
+        //     top: 50%;
+        //     transform: translateY(-50%);
+        //     color: #999;
+        //     font-size: 18px;
+        //     transition: 0.3s ease;
+        //     display: none;
+        //   }
+        // }
       }
     }
   }
@@ -181,6 +181,22 @@ body {
 .input-div.focus:after,
 .input-div.focus:before {
   width: 50%;
+}
+
+.input-div > div {
+  position: relative;
+  height: 45px;
+}
+
+.input-div > div h5 {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #999;
+  font-size: 18px;
+  transition: 0.3s ease;
+  //   display: none;
 }
 
 @media screen and (max-width: 1050px) {
